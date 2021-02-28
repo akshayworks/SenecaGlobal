@@ -1,0 +1,38 @@
+Selenium Browser commands:
+Get commands:
+1.get()
+2.getCurrentUrl()
+3.getPageSource()
+4.getPageTitle()
+
+Nevigate commands:
+1.nevigate().to()//(same as get())
+2.nevigate().back()
+3.nevigate().refresh()
+4.nevigate().forward()
+
+close()
+quit()
+findElement()
+click()
+sendKeys()
+
+Element locators:
+1.ID
+2.classname
+3.name
+4.tagname
+5.link text
+6.partial link text
+7.xpath:
+contains(): xpath= //*[contains(@type,'sub')]
+starts-with(): xpath= //lable[starts-with(@id,'message')]
+text(): xpath= //td[text()='UserID']
+
+8.CSS: 
+<input id="abc", class="xyz">
+By.cssSelector(input#id_value)
+By.cssSelector(input.class_value)
+
+By.cssSelector(input#abc)
+By.cssSelector(input.xyz)
