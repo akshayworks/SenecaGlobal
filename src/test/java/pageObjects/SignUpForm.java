@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+
 public class SignUpForm {
 	
 	public WebDriver driver;
@@ -13,8 +14,15 @@ public class SignUpForm {
 	By lname=By.name("lastname");
 	By mobileNo=By.name("reg_email__");
 	By password=By.name("reg_passwd__");
-	By day=By.id("day");
+	//By day=By.id("day");
+	By gender=By.xpath("//*[@id=\"u_2_o_dt\"]/span[2]/label");
+	By signUp=By.name("websubmit");
 	
+	public SignUpForm(WebDriver driver) {
+		// TODO Auto-generated constructor stub
+		this.driver=driver;
+	}
+
 	public WebElement fName()
 	{
 		
@@ -39,18 +47,27 @@ public class SignUpForm {
 		return driver.findElement(password);
 	}
 	
-	public WebElement day()
+	/*public WebElement day()
 	{
 		
 		return driver.findElement(day);
-		Select dayobj=new Select(driver);
 		
-	}
+		
+	}*/
 	
-	public WebElement fName()
+	public WebElement gender()
 	{
 		
-		return driver.findElement(fname);
+		return driver.findElement(gender);
 	}
+	
+	public WebElement signUp()
+	{
+		
+		return driver.findElement(signUp);
+	}
+	
 
+	
+	
 }

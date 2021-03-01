@@ -8,7 +8,7 @@ public class FaceBookHome {
 	
 	public WebDriver driver;
 	
-	By clickButton=By.xpath("//*[@id=\"u_0_2_gB\"]");
+	By clickButton=By.id("u_0_2_4fu_0_2_4f");
 	
 	public FaceBookHome(WebDriver driver) {
 		// TODO Auto-generated constructor stub
