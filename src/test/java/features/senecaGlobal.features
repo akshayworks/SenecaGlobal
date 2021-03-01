@@ -1,0 +1,12 @@
+Feature: To Implement all the requirements asked by Seneca Global
+
+Scenario: To Navigate Google URL
+Given User is on Google Home URL
+When User clicks I am Feeling Lucky button
+Then User clicks on first Doodle
+
+
+Scenario: To Navigate through Facebook URL
+Given User is on Facebook Home Page
+When User Clicks on Create New Account
+Then User fills Signup form and Submits
